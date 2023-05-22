@@ -81,12 +81,12 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-GROUP_START_IMG = "https://graph.org//file/b132c3bcde2bf678189e8.mp4" 
+GROUP_START_IMG = "" 
     
     
 PM_START_TEXT = """
 *Hello {} !*
-☆ I'm *Lionell Messi* a football-themed management bot [✨](https://graph.org//file/e17d325b324f88bfeef9c.jpg)
+☆ I'm *Lionell Messi* a football-themed management bot [✨]
 ────────────────────────
 × * Subject Uptime:* `{}`
 × `{}` *Fans, across* `{}` *Groups.*
