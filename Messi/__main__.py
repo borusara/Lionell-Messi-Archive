@@ -81,12 +81,12 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-GROUP_START_IMG = "" 
+GROUP_START_IMG = "https://telegra.ph/file/8aabf6c44ad21c7680c1c.jpg" 
     
     
 PM_START_TEXT = """
 *Hello {} !*
-☆ I'm *Shoushuke Komi* an anime themed group management bot [✨]
+☆ I'm *Shoushuke Komi* an anime themed group management bot [✨](https://telegra.ph/file/6dcba2b1c51005becaab6.jpg)
 ────────────────────────
 × * Subject Uptime:* `{}`
 × `{}` *users, across* `{}` *Groups.*
@@ -96,7 +96,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="messi_"),
+        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="shoushuke_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -788,7 +788,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                "Hi moi dear weebs, [Shoushuke](https://t.me/shoushuke_komi_bot) is back alive. ",
+                "(https://telegra.ph/file/ac45829d082da39673eb4.jpg)Hi moi dear weebs, [Shoushuke](https://t.me/shoushuke_komi_bot) is back alive. ",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
