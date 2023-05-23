@@ -86,12 +86,12 @@ GROUP_START_IMG = ""
     
 PM_START_TEXT = """
 *Hello {} !*
-☆ I'm *Lionell Messi* a football-themed management bot [✨]
+☆ I'm *Shoushuke Komi* an anime themed group management bot [✨]
 ────────────────────────
 × * Subject Uptime:* `{}`
-× `{}` *Fans, across* `{}` *Groups.*
+× `{}` *users, across* `{}` *Groups.*
 ────────────────────────
-☆ Hit /net to know my team.
+☆ Hit /help to know my abilities.
 """
 
 buttons = [
@@ -101,12 +101,12 @@ buttons = [
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="My Officials", url=f"t.me/Fifa_Federation"
+            text="My Officials", url=f"https://t.me/Knights_X_association"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="+  Add Me To Your Group +", url=f"t.me/messi_probot?startgroup=new"),
+            text="+  Add Me To Your Group +", url=f"t.me/shoushuke_komi_bot?startgroup=new"),
     ],
 ]
 
@@ -116,7 +116,7 @@ Click on the button bellow to get description about specifics command."""
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting the members of @messi_probot_team \
+ You can support the project by contacting the members of @shoushuke_komi_bot \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -243,7 +243,7 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="U P D A T E S", url="https://t.me/Messi_Probot_Team"
+                            text="U P D A T E S", url="https://t.me/shoushuke_updates"
                         ),
                     ],
                 ]
@@ -377,7 +377,7 @@ def messi_about_callback(update, context):
     query = update.callback_query
     if query.data == "messi_":
         query.message.edit_text(
-            text=f"๏ I'm *Lionell Messi*, a powerful group management bot built to help you manage your group easily."
+            text=f"๏ I'm *Shoushuke Komi*, a powerful anime themed group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -398,9 +398,7 @@ def messi_about_callback(update, context):
                     InlineKeyboardButton(text="Support", callback_data="messi_support"),
                     InlineKeyboardButton(text="Credits", callback_data="messi_credit"),
                  ],
-                 [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/HashiraAssociation/Lionell"),
-                 ],
+                   
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="source_back"),
                  ]
