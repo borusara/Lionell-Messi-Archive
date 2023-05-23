@@ -86,7 +86,7 @@ GROUP_START_IMG = "https://telegra.ph/file/8aabf6c44ad21c7680c1c.jpg"
     
 PM_START_TEXT = """
 *Hello {} !*
-☆ I'm *Shoushuke Komi* an anime themed group management bot [✨](https://telegra.ph/file/6dcba2b1c51005becaab6.jpg)
+☆ I'm *Shoushuke Komi* an anime themed group management bot [✨](https://telegra.ph/file/bf107f42c0eab6fe7c4ac.jpg)
 ────────────────────────
 × * Subject Uptime:* `{}`
 × `{}` *users, across* `{}` *Groups.*
@@ -788,7 +788,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                "(https://telegra.ph/file/ac45829d082da39673eb4.jpg)Hi moi dear weebs, [Shoushuke](https://t.me/shoushuke_komi_bot) is back alive. ",
+                "[🗿](https://telegra.ph/file/ac45829d082da39673eb4.jpg) Hi moi dear weebs, [Shoushuke](https://t.me/shoushuke_komi_bot) is back alive. ",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
