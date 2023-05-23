@@ -391,12 +391,12 @@ def messi_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="messi_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="messi_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="shoushuke_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="shoushuke_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="messi_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="messi_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="shoushuke_support"),
+                    InlineKeyboardButton(text="Credits", callback_data="shoushuke_credit"),
                  ],
                    
                  [
@@ -406,7 +406,7 @@ def messi_about_callback(update, context):
             ),
         )
 
-    elif query.data == "messi_admin":
+    elif query.data == "shoushuke_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
             f"\nCongragulations, {dispatcher.bot.first_name} now ready to manage your group."
@@ -423,7 +423,7 @@ def messi_about_callback(update, context):
             ),
         )
 
-    elif query.data == "messi_notes":
+    elif query.data == "shoushuke_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -434,7 +434,7 @@ def messi_about_callback(update, context):
                 [[InlineKeyboardButton(text="Go Back", callback_data="messi_")]]
             ),
         )
-    elif query.data == "messi_support":
+    elif query.data == "shoushuke_support":
         query.message.edit_text(
             text="*๏ Messi support chats*"
             f"\nJoin My Support Group/Channel for see or report a problem on {dispatcher.bot.first_name}.",
@@ -442,11 +442,11 @@ def messi_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/Messi_Probot_Support"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/Messi_Probot_Team"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/shoushuke_support"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/shoushuke_updates"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="messi_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="shoushuke_"),
                  
                  ]
                 ]
@@ -454,10 +454,10 @@ def messi_about_callback(update, context):
         )
 
 
-    elif query.data == "messi_credit":
+    elif query.data == "shoushuke_credit":
         query.message.edit_text(
-            text=f"๏ Credis for *Messi*\n"
-            "\nHere Are The Developers Who Made And Gave Inspiration For The Messi A.I",
+            text=f"๏ Credis for *shoushuke*\n"
+            "\nHere Are The Developers Who Made And Gave Inspiration For The shoushuke A.I",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -470,7 +470,7 @@ def messi_about_callback(update, context):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="B A C K", callback_data="messi_"),
+                        InlineKeyboardButton(text="B A C K", callback_data="shoushuke_"),
                     ],
                 ]
             ),
@@ -547,7 +547,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="t.me/messi_probot?start=help".format(context.bot.username),
+                            url="t.me/shoushuke_komi_bot?start=help".format(context.bot.username),
                         )
                     ]
                 ]
