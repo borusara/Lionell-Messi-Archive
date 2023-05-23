@@ -788,7 +788,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                "[⚽️](https://graph.org//file/8f830535f8a86f3bf4298.jpg) Hi my dear fans, [Messi](t.me/messi_probot) is back alive.",
+                "Hi moi dear weebs, [Shoushuke](https://t.me/shoushuke_komi_bot) is back alive. ",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
