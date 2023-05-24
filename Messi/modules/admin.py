@@ -35,7 +35,7 @@ def set_sticker(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text("You're missing rights to change chat info!")
+        return msg.reply_text("Ayo ? you dont have 'change chat info' right so get lost !")
 
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
@@ -49,7 +49,7 @@ def set_sticker(update: Update, context: CallbackContext):
         except BadRequest as excp:
             if excp.message == "Participants_too_few":
                 return msg.reply_text(
-                    "Sorry, due to telegram restrictions chat needs to have minimum 100 members before they can have group stickers!"
+                    "Dewm, Telegram restricted your group to have chat stickers because you dont have 100 members in your group bro!"
                 )
             msg.reply_text(f"Error! {excp.message}.")
     else:
@@ -64,7 +64,7 @@ def setchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("You are missing right to change group info!")
+        msg.reply_text("Ayo ? you dont have 'change chat info' right so get lost")
         return
 
     if msg.reply_to_message:
@@ -99,7 +99,7 @@ def rmchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("You don't have enough rights to delete group photo")
+        msg.reply_text("do you think youhave right to delete group photo ? aww poor you 😂")
         return
     try:
         context.bot.delete_chat_photo(int(chat.id))
@@ -116,7 +116,7 @@ def set_desc(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        return msg.reply_text("You're missing rights to change chat info!")
+        return msg.reply_text("Ayo ? you dont have 'change chat info' right so get lost")
 
     tesc = msg.text.split(None, 1)
     if len(tesc) >= 2:
@@ -125,7 +125,7 @@ def set_desc(update: Update, context: CallbackContext):
         return msg.reply_text("Setting empty description won't do anything!")
     try:
         if len(desc) > 255:
-            return msg.reply_text("Description must needs to be under 255 characters!")
+            return msg.reply_text("Description must needs to be under 255 characters you buddy")
         context.bot.set_chat_description(chat.id, desc)
         msg.reply_text(f"Successfully updated chat description in {chat.title}!")
     except BadRequest as excp:
@@ -140,7 +140,7 @@ def setchat_title(update: Update, context: CallbackContext):
     args = context.args
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("You don't have enough rights to change chat info!")
+        msg.reply_text("Ayo ? you dont have 'change chat info' right so get lost")
         return
 
     title = " ".join(args)
@@ -178,7 +178,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and user.id not in DRAGONS
     ):
-        message.reply_text("You don't have the necessary rights to do that!")
+        message.reply_text("Lmao, you dont have right to perform this task, neither you deserve it 🗿")
         return
 
     user_id = extract_user(message, args)
@@ -195,11 +195,11 @@ def promote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status in ('administrator', 'creator'):
-        message.reply_text("How am I meant to promote someone that's already an admin?")
+        message.reply_text("How dumb can you be lmao 😂, trying to promote someone who's already an admin is stupidity of yours🗿")
         return
 
     if user_id == bot.id:
-        message.reply_text("I can't promote myself! Get an admin to do it for me.")
+        message.reply_text("aww this sadness and sorrow, please promote me or find an admin who can promote this poor soul🥲.")
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -220,7 +220,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         )
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
-            message.reply_text("I can't promote someone who isn't in the group.")
+            message.reply_text("Idiot !, the person you're trying to promote isn't in the group")
         else:
             message.reply_text("An error occured while promoting.")
         return
@@ -260,7 +260,7 @@ def lowpromote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and user.id not in DRAGONS
     ):
-        message.reply_text("You don't have the necessary rights to do that!")
+        message.reply_text("go !, get some necessary rights kid ! which you dont deserve obviously🗿")
         return
 
     user_id = extract_user(message, args)
