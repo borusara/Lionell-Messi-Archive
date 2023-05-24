@@ -371,7 +371,7 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/Hashira_Association/91"),
+                                "Health", url="https://t.me/shoushuke_updates/4"),
                             InlineKeyboardButton(
                                 "Disaster", url="https://t.me/Hashira_Association/89")
                         ],
@@ -445,9 +445,9 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>╔═━「 Current Messi Probot Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>╔═━「 Current Shoushuke A.I Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n<b>╘═━「 Powered By @Messi_Probot_Team 」</b>"
+    result += "\n<b>╘═━「 Powered By @PrimesDivision 」</b>"
     update.effective_message.reply_text(
         result,
         parse_mode=ParseMode.HTML, 
