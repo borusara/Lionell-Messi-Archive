@@ -1,5 +1,5 @@
 import itertools
-import EnmuBot.modules.sql.language_sql as sql
+import Messi.modules.sql.language_sql as sql
 
 from typing import Union, List, Dict, Callable, Generator, Any
 
