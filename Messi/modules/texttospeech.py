@@ -7,7 +7,7 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from EnmuBot import *
+from Messi import *
 
 from Messi import telethn as tbot
 from Messi.events import register
