@@ -91,23 +91,23 @@ def ban(update: Update, context: CallbackContext) -> str:
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
-            message.reply_text("Trying to put me against a King huh?")
+            message.reply_text("You Think You can ban my creator ? go get some brain kid !")
         elif user_id in DEV_USERS:
-            message.reply_text("I can't act against our Prince.")
+            message.reply_text("Ayo ! he's my dev, how dare you to ban him you ducking stich")
         elif user_id in DRAGONS:
             message.reply_text(
-                "Fighting this Emperor here will put user lives at risk."
+                "hmm, so this brainless idiot is tryna ban my sudo... interesting... continuecontinue.. go on."
             )
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Captain to fight a Assasin servant."
+                "YO !I wont do that ! its against my limit."
             )
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from Soldier to fight a Lancer servant."
+                "🗿nothing to say about your stupidness... continue..."
             )
         elif user_id in WOLVES:
-            message.reply_text("Trader access make them ban immune!")
+            message.reply_text("the person is immune to ban")
         else:
             message.reply_text("⚠️ Cannot banned admin.")
         return log_message
@@ -206,7 +206,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         message.reply_text("I can't seem to find this user.")
         return log_message
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text("Are you crazy or what ? imma not gonna ban myself, go and cryon it")
         return log_message
 
     if is_user_ban_protected(chat, user_id, member):
