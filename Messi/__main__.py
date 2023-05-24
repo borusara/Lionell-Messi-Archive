@@ -446,7 +446,7 @@ def messi_about_callback(update, context):
                     InlineKeyboardButton(text="Updates", url="https://t.me/shoushuke_updates"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="shoushuke_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="messi_"),
                  
                  ]
                 ]
@@ -463,14 +463,14 @@ def messi_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="H A S H I R A", url="https://github.com/HashiraAssociation"
+                            text="H A S H I R A", url="https://github.com/PrimexRick"
                         ),
                         InlineKeyboardButton(
                             text="H A S H I R A (telegram)", url="https://t.me/Hashira_Association"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="B A C K", callback_data="shoushuke_"),
+                        InlineKeyboardButton(text="B A C K", callback_data="messi_"),
                     ],
                 ]
             ),
@@ -878,5 +878,5 @@ API
 Training
 Blog
 About
-Messi/__main__.py at master · HashiraAssociation/Lionell
+Messi/__main__.py at master · ricks40096/Lionell-Messi-Archive
 """
