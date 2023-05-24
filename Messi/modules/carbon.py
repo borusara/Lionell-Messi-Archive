@@ -24,7 +24,7 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-MEMEK = "https://telegra.ph/file/36e580047ea41f4036666.jpg"
+MEMEK = "https://telegra.ph/file/bf107f42c0eab6fe7c4ac.jpg"
 
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
@@ -32,14 +32,11 @@ async def repo(_, message):
         photo=MEMEK,
         caption=f"""✨ **Hey I'm Messi** 
 
-**Owner of repo : [Messi Probot Team](https://t.me/Messi_Probot_Team)**
+**Owner of repo : [Shoushuke Komi Devs](https://t.me/shoushuke_updates/3)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
 **Pyrogram Version :** `{z}`
-** My collaborators**
-** 1) [♤](https://t.me/rickz_2005)**
-** 1) [♤](https://t.me/ricks_005)**
 
 **Sorry but the repo is not available till the bot reaches 100 chats**
 """,
@@ -47,9 +44,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Network", url="https://t.me/Messi_probot_Team"), 
+                        "Network", url="https://t.me/Knights_X_association"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/Messi_Probot_Support")
+                        "Support", url="https://t.me/shoushuke_support")
                 ]
             ]
         )
