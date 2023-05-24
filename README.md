@@ -16,4 +16,4 @@ src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=flat&logo=herok
 
 3 . [LOST HOPE](https://t.me/hope_left_the_chat)
 
-4. [Primes](https://telegram.dog/primesdivision)
+4 . [Primes](https://telegram.dog/primesdivision)
