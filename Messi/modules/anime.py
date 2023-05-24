@@ -7,7 +7,6 @@ import jikanpy
 import requests
 from Messi import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
 from Messi.modules.disable import DisableAbleCommandHandler
-from Messi.modules.language import gs
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler
