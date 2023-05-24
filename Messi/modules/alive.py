@@ -9,9 +9,9 @@ from Messi.events import register
 from Messi import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/9b2f5c511b0ecdfbabdcf.mp4"
+PHOTO = ""
 
-@register(pattern=("awake messi"))
+@register(pattern=("/alive"))
 async def awake(event):
   TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Shoushuke Komi** \n\n"
   TEXT += "🗡 **I'm Working Properly** \n\n"
@@ -19,6 +19,6 @@ async def awake(event):
   TEXT += f"🗡 **Library Version :** `{x}` \n\n"
   TEXT += f"🗡 **Telethon Version :** `{y}` \n\n"
   TEXT += f"🗡 **Pyrogram Version :** `{z}` \n\n"
-  TEXT += "**⚽️ Thanks For Adding Me Here ⚽️**"
-  BUTTON = [[Button.url("Help", "https://t.me/Messi_Probot?start=help"), Button.url("My Headquarters", "https://t.me/shoushuke_support")]]
+  TEXT += "**🗿 Thanks For Adding Me Here 🗿**"
+  BUTTON = [[Button.url("Help", "https://t.me/@shoushuke_komi_bot?start=help"), Button.url("My Headquarters", "https://t.me/shoushuke_support")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
