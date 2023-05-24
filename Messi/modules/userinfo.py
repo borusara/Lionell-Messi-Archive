@@ -298,25 +298,25 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Disaster level of this person is 'Team Captain'."
+        text += "\n\nThis person is my father."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Frontline Player'."
+        text += "\n\nThis user is one of my mothers'."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Frontline Player'."
+        text += "\n\nThis user is one of my sibling."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'Team Staff'."
+        text += "\n\nThis person is my relative'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Team Official'."
+        text += "\n\nThis person ? he is one of my friend'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Team Official'."
+        text += "\n\nThis user is one of my clan member'."
         disaster_level_present = True
     elif user.id == 2078455329:
-         text += "\n\nAn elite of the team"
+         text += "\n\nan elite clan member"
          disaster_level_present = True
 
     try:
@@ -353,7 +353,7 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/Hashira_Association/91"),
+                                "Health", url="https://t.me/shoushuke_updates/4"),
                             InlineKeyboardButton(
                                 "Disaster", url="https://t.me/Hashira_Association/89")
                         ],
