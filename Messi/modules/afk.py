@@ -46,7 +46,7 @@ def afk(update: Update, context: CallbackContext):
     sql.set_afk(update.effective_user.id, reason)
     fname = update.effective_user.first_name
     try:
-        update.effective_message.reply_text("{} Bye , See you in the hall of fame ⚽️!{}".format(fname, notice))
+        update.effective_message.reply_text("{} just go away already and give your hands some rest 🗿!{}".format(fname, notice))
     except BadRequest:
         pass
 
@@ -65,7 +65,11 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "{} is here!",
+                "{} is here!,
+                "{} so you are finally here huh ?", 
+                "{} bruhh, he/ she finally woke up!",
+                "{} ayo, see whos awake",
+                "{} welcome to this cruelity, you were in piece quite some seconds ago", 
                 "{} is back!",
                 "{} is now in the chat!",
                 "{} is awake!",
@@ -135,10 +139,10 @@ def check_afk(update, context, user_id, fst_name, userc_id):
         if int(userc_id) == int(user_id):
             return
         if not user.reason:
-            res = "{} is in the hall of fame ⚽️".format(fst_name)
+            res = "{} is giving taking some rest, so dont tag him alright ?`".format(fst_name)
             update.effective_message.reply_text(res)
         else:
-            res = "{} is in dressing room ⚽️.\nReason: <code>{}</code>".format(
+            res = "{} has gone for away from his keyboard.\nReason: <code>{}</code>".format(
                 html.escape(fst_name), html.escape(user.reason)
             )
             update.effective_message.reply_text(res, parse_mode="html")
