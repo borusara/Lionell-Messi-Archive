@@ -12,6 +12,14 @@ from Messi import telethn as tbot
 PHOTO = "https://telegra.ph/file/c6df4d4c432a2f178bc2f.mp4"
 
 @register(pattern=("awake shoushuke"))
+@register(pattern=("Awake shoushuke"))
+@register(pattern=("Awake Komi"))
+@register(pattern=("/awake")
+@register(pattern=("/alive"))
+          
+          
+
+
 async def awake(event):
   TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Shoushuke Komi** \n\n"
   TEXT += "🗡 **I'm Working Properly** \n\n"
