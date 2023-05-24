@@ -14,7 +14,7 @@ PHOTO = "https://telegra.ph/file/c6df4d4c432a2f178bc2f.mp4"
 @register(pattern=("awake shoushuke"))
 @register(pattern=("Awake shoushuke"))
 @register(pattern=("Awake Komi"))
-@register(pattern=("/awake")
+@register(pattern=("/awake"))
 @register(pattern=("/alive"))
           
           
