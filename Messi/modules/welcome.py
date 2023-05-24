@@ -15,10 +15,10 @@ from Messi import (
     LOGGER,
     dispatcher,
 )
-OWNER_WELCOME_MEDIA = "https://telegra.ph/file/0318555d451ded9988b4e.jpg"
-LOG_CHANNEL = "-1001555358542"
-UPDATE_CHANNEL = "Messi_Probot_Team"
-SUPPORT_CHAT = "messi_probot_support"
+OWNER_WELCOME_MEDIA = "https://telegra.ph/file/a815aeef7bbb7c22985ec.jpg"
+LOG_CHANNEL = "-1787802070"
+UPDATE_CHANNEL = "shoushuke_updates"
+SUPPORT_CHAT = "shoushuke_support"
 from Messi.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
