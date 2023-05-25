@@ -68,15 +68,15 @@ async def get_file_id_from_message(msg):
 
 @app.on_message(filters.command(["pp","grs","reverse","r"]) & filters.group)
 async def _reverse(_,msg):
-      text = await msg.reply("**⇢ wait some time...**")
+      text = await msg.reply("** wait some time...**")
       file_id = await get_file_id_from_message(msg)
       if not file_id:
           return await text.edit("**reply to media!**")
-      await text.edit("**⇢ Searching In Google....**")    
+      await text.edit("**Searching In Google....**")    
       result = await Sauce(bot_token,file_id)
       if not result["output"]:
           return await text.edit("Couldn't find anything")
-      await text.edit(f'[{result["output"]}]({result["similar"]})\n\n Bot Prividers• @PrimesDivision',reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Site",url=result["similar"])]]))
+      await text.edit(f'[{result["output"]}]({result["similar"]})\n\n Bot Prividers• @PrimesDivision',reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Visit results",url=result["similar"])]]))
  
  
 @app.on_message(filters.command(["pp","grs","reverse","r"]) & filters.private)
@@ -89,7 +89,7 @@ async def ppsearch(_,msg):
       result = await Sauce(bot_token,file_id)
       if not result["output"]:
           return await text.edit("Couldn't find anything")
-      await text.edit(f'[{result["output"]}]({result["similar"]})\n\n Queries at @PrimexTech',reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Site",url=result["similar"])]]))
+      await text.edit(f'[{result["output"]}]({result["similar"]})\n\n Queries at @PrimexTech',reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Visit Results",url=result["similar"])]]))
    
  
                       
