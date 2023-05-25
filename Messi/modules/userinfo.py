@@ -298,22 +298,22 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThis person is my father."
+        text += "\n\nThis user is my father. dewm."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is one of my mothers'."
+        text += "\n\nOh yeah, this user is one of my dev."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThis user is one of my sibling."
+        text += "\n\nNoice, this user is one of the sudo of me"
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThis person is my relative'."
+        text += "\n\nOh ! hey ? whats a demon doin here ?."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThis person ? he is one of my friend'."
+        text += "\n\nHmm so tigers this tiger is gonna hunt someone ig'."
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\nThis user is one of my clan member'."
+        text += "\n\nOh hey ? isnt it a wolf ?'."
         disaster_level_present = True
     elif user.id == 2078455329:
          text += "\n\nan elite clan member"
