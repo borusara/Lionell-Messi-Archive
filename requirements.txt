@@ -3,6 +3,7 @@ emoji
 lxml
 wget
 gtts
+unidecode
 beautifulsoup4
 requests
 python-telegram-bot==13.13
