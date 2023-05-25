@@ -1,5 +1,3 @@
-
-
 from Messi import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update, ParseMode
