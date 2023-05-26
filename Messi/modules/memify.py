@@ -32,7 +32,7 @@ async def handler(event):
 
     file = await bot.download_media(reply_message)
 
-    msg = await event.reply("```Memifying this image! (」ﾟﾛﾟ)｣ ```")
+    msg = await event.reply("```Memifying this image! 🗿 ```")
 
     text = str(event.pattern_match.group(1)).strip()
 
