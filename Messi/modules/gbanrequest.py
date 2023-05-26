@@ -49,7 +49,7 @@ async def bug(_, msg: Message):
     
     bug_report = f"""
 **#ASSASINATION_REQUEST : ** **@{owner_usn}**
-
+**Aneki I Have A Mission**
 **━━━━━━━━━━━━━━━━━━━  
 × ꜰʀᴏᴍ : {mention}
 × ᴜꜱᴇʀ ɪᴅ : {user_id}
