@@ -89,7 +89,7 @@ def gban(update: Update, context: CallbackContext):
 
     if int(user_id) in DEV_USERS:
         message.reply_text(
-            "That user is part of the Association\nI can't act against VOID...",
+            "That user is part of the Association\nI can't act against a prime...",
         )
         return
 
@@ -125,7 +125,7 @@ def gban(update: Update, context: CallbackContext):
         user_chat = bot.get_chat(user_id)
     except BadRequest as excp:
         if excp.message == "User not found":
-            message.reply_text("Hori! Couldn't find this user")
+            message.reply_text("I Couldn't find this user")
             return ""
         return
 
