@@ -8,7 +8,7 @@ from Messi import telethn as tbot
 
 PHOTO = "https://te.legra.ph/file/1c669652caf94443689ca.jpg"
 
-@register(pattern=("?bancodes"))
+@register(pattern=("/bancodes"))
 async def awake(event):
   TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Shoushuke Komi** \n\n"
   TEXT += "🗡 **Here are bancodes for [Shoushuke](https://t.me/shoushuke_komi_bot)** \n\n"
