@@ -114,7 +114,7 @@ def gban(update: Update, context: CallbackContext):
         return
 
     if user_id == bot.id:
-        message.reply_text("You uhh...want me to gban love of void?\nYoure in trouble...")
+        message.reply_text("You uhh...want me to gban myself?\nYoure in trouble...")
         return
 
     if user_id in [777000, 1087968824]:
@@ -260,9 +260,9 @@ def gban(update: Update, context: CallbackContext):
 
     if gban_time > 60:
         gban_time = round((gban_time / 60), 2)
-        message.reply_text("Done! Hori San will keep him/her Away! from your chats.", parse_mode=ParseMode.HTML)
+        message.reply_text("Done! Shoushuke will keep him/her Away! from your chats.", parse_mode=ParseMode.HTML)
     else:
-        message.reply_text("Done! Hori San will kick his/her ass wherever i see this user! MUAHAHAHAHA", parse_mode=ParseMode.HTML)
+        message.reply_text("Done! Shoushuke already assasinated the user.", parse_mode=ParseMode.HTML)
 
     try:
         bot.send_message(
