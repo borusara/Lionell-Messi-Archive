@@ -22,11 +22,11 @@ from telegram.ext import (
     MessageHandler,
 )
 from telegram.utils.helpers import mention_html
-from EnmuBot.modules.helper_funcs.string_handling import extract_time
-from EnmuBot.modules.connection import connected
-from EnmuBot.modules.helper_funcs.alternate import send_message
-from EnmuBot.modules.sql.approve_sql import is_approved
-from EnmuBot.modules.language import gs
+from Messi.modules.helper_funcs.string_handling import extract_time
+from Messi.modules.connection import connected
+from Messi.modules.helper_funcs.alternate import send_message
+from Messi.modules.sql.approve_sql import is_approved
+from Messi.modules.language import gs
 
 FLOOD_GROUP = 3
 
