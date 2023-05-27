@@ -15,7 +15,7 @@ from Messi import (
     LOGGER,
     dispatcher,
 )
-OWNER_WELCOME_MEDIA = "https://telegra.ph/file/a815aeef7bbb7c22985ec.jpg"
+OWNER_WELCOME_MEDIA = "https://telegra.ph/file/4634324c248e283ef7fd2.mp4"
 LOG_CHANNEL = "-1787802070"
 UPDATE_CHANNEL = "shoushuke_updates"
 SUPPORT_CHAT = "shoushuke_support"
@@ -234,7 +234,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
 
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                TEXT = "Behold!! My Owner is Here."
+                TEXT = "Behold!! My father (Owner) is Here."
                 try:
                     if wel_id in ("jpeg", "jpg", "png"):
                         update.effective_message.reply_photo(OWNER_WELCOME_MEDIA, caption=TEXT, reply_to_message_id=reply)
@@ -265,7 +265,7 @@ def new_member(update: Update, context: CallbackContext):  # sourcery no-metrics
             # Welcome Sudos
             if new_mem.id in DRAGONS:
                 update.effective_message.reply_text(
-                    "Huh! A dragonjust joined! Stay Alert!",
+                    "Huh! A Sudo of mine joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
