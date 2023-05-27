@@ -1,7 +1,7 @@
 import itertools
 import Messi.modules.sql.language_sql as sql
 
-from Messi import Union, List, Dict, Callable, Generator, Any
+from Messi import List, Dict, Callable, Generator, Any
 
 from collections.abc import Iterable
 from telegram.ext import CommandHandler, CallbackQueryHandler
