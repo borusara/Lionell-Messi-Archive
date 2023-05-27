@@ -3,9 +3,9 @@ import requests
 from pyrogram import Client, filters
 from pyrogram.types import Message, Chat
 from pyrogram.types import ChatPermissions
-"""import your pyrogram client as pbot"""
+from Messi import pbot
 
-api_key = "Your slayer Scanner Token" #Get it from @BlueXDBot by /token
+api_key = "SlayerApiKey-a3b216ec73c1016aa8332d4533c72d11d09abd0c" #Get it from @BlueXDBot by /token
 
 url = "https://slayerapi2-0.herokuapp.com/records"
 headers = {'API-KEY': api_key}
