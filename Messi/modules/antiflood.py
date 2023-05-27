@@ -11,8 +11,8 @@ from Messi.modules.helper_funcs.chat_status import (
     user_admin,
     user_admin_no_reply,
 )
-from EnmuBot.modules.log_channel import loggable
-from EnmuBot.modules.sql import antiflood_sql as sql
+from Messi.modules.log_channel import loggable
+from Messi.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
