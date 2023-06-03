@@ -264,7 +264,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "black"
     shadowcolor = "blue"
-    fnt = glob.glob("./EnmuBot/resources/font/*")
+    fnt = glob.glob("./Messi/resources/font/*")
     randf = random.choice(fnt)
     font = ImageFont.truetype(randf, 120)
     w, h = draw.textsize(text, font=font)
@@ -276,7 +276,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
     fname = "Enmu.png"
     img.save(fname, "png")
-    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by [Enmu](@Enmu_kizuki_bot)")         
+    await telethn.send_file(event.chat_id, file=fname, caption = f"Made by [Shoushuke](@Shoushuke_komi_bot)")         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
