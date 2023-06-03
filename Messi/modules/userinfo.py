@@ -301,10 +301,10 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThis user is my father. dewm."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nOh yeah, this user is one of my dev."
+        text += "\n\nOh yeah boi, this guy/ girl is one of my dev"
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nNoice, this user is one of the sudo of me"
+        text += "\n\nNoice, this user is one of the sudo of shoushuke bot"
         disaster_level_present = True
     elif user.id in DEMONS:
         text += "\n\nOh ! hey ? whats a demon doin here ?."
