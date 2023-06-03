@@ -8,7 +8,7 @@ import uuid
 from io import BytesIO
 
 import Messi.modules.sql.feds_sql as sql
-from EnmuBot import (
+from Messi import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
