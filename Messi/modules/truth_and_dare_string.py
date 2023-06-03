@@ -84,4 +84,5 @@ DARE = (
     "Send a screenshot of your gallery.",
     "Set your crush’s picture as your dp.",
     "propose a women in this group.",
-)   "fock your own ash off.",
+    "fock your own ash off.",
+)  
