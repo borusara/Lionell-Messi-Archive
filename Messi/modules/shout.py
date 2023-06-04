@@ -1,5 +1,4 @@
 from Messi import dispatcher
-from Messi.ext import CallbackContext
 from Messi.modules.helper_funcs.decorators import Messi
 
 @register(command='shout')
