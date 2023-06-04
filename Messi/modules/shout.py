@@ -1,5 +1,5 @@
-from Telegram import dispatcher
-from telegram import Update
+from Messi import dispatcher
+from Messi import Update
 from Messi.ext import CallbackContext
 from Messi.modules.helper_funcs.decorators import Messi
 
