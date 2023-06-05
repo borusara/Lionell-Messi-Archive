@@ -7,7 +7,6 @@ from Messi import dispatcher
 from Messi.modules.disable import DisableAbleCommandHandler
 from Messi.modules.helper_funcs.chat_status import is_user_admin
 from Messi.modules.helper_funcs.extraction import extract_user
-from Messi.modules.language import gs
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
