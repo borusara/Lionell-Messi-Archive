@@ -1,4 +1,4 @@
-from Shikimori.mongo import db
+from Messi.mongo import db
 
 karma_statusdb = db.karma_status
 
