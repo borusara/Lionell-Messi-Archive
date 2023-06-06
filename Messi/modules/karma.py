@@ -12,7 +12,7 @@ from Messi.ex_plugins.dbfunctions import (
     update_karma,
 )      
 from Messi.utils.filter_groups import karma_negative_group, karma_positive_group
-from Messi.core.decorators.errors import capture_err
+from Messi.utils.errors import capture_err
 
 regex_upvote = r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|pro|cool|good|pro|pero|op|nice|noice|best|uwu|owo|right|correct|peru|piro|👍)$"
 regex_downvote = r"^(\-|\-\-|\-1|👎|noob|baka|idiot|chutiya|nub|noob|wrong|incorrect|chaprii|chapri|weak)$"
