@@ -1,5 +1,5 @@
 import requests
-from Shikimori import pbot
+from Messi import pbot
 from pyrogram import filters, Client
 from pyrogram.types import Message
 from pyrogram.enums import ParseMode
