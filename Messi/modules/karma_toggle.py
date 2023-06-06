@@ -1,7 +1,7 @@
 
 
-import Messi.modules.mongo.karma_mongo as ksql
-from Messi.modules.sql import log_channel_sql as logsql
+
+
 import html
 from telegram import ParseMode
 from telegram import (InlineKeyboardButton,
@@ -12,6 +12,8 @@ from telegram.utils.helpers import mention_html
 from Messi.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 from Messi import  dispatcher
 from Messi.modules.log_channel import gloggable, loggable
+from Messi.modules.mongo inport karma_mongo as ksql
+from Messi.modules.sql import log_channel_sql as logsql
 
 bot_name = f"{dispatcher.bot.first_name}"
 
