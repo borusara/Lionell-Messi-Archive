@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import filters
 
 from Messi import DRAGONS, pbot as app
-import Messi.modules.mongo.karma_mongo as sql
+from Messi.modules.mongo import karma_mongo as sql
 from Messi.ex_plugins.dbfunctions import (
     alpha_to_int,
     get_karma,
