@@ -1,6 +1,10 @@
 import random
 from telethon.sync import TelegramClient, events
 
+# Enter Telegram API credentials
+api_id = '20845525'
+api_hash = '0050453e7ad58679e823fa5767117ff7'
+
 # Create a TelegramClient instance
 client = TelegramClient('brain_teasers_bot', api_id, api_hash)
 
