@@ -1,4 +1,5 @@
 import random
+import asyncio
 from telethon.sync import TelegramClient, events
 
 # Enter Telegram API credentials
@@ -33,16 +34,21 @@ async def handle_message(event):
     if message.text:
         text = message.text.strip().lower()
         if text == '/riddle':
-            random_teaser = random.choice(brain_teasers)
+            # Use random.randint() instead of random.choice()
+            random_teaser = brain_teasers[random.randint(0, len(brain_teasers) - 1)]
             await message.reply(f"Here's a riddle for you:\n\n{random_teaser['question']}")
         else:
-            user_answer = text
-            for teaser in brain_teasers:
-                if user_answer == teaser['answer']:
-                    await message.reply("Oh, you have won, but you don't win anything 🗿")
-                    break
+            # Check if the user has provided an answer
+            if text:
+                user_answer = text
+                for teaser in brain_teasers:
+                    if user_answer == teaser['answer']:
+                        await message.reply("Oh, you have won, but you don't win anything 🗿")
+                        break
+                else:
+                    await message.reply("Sorry to say, but that is not correct 🗿")
             else:
-                await message.reply("Sorry to say, but that is not correct 🗿")
+                await message.reply("Please provide an answer.")
 
 # Start the bot
 async def start_bot():
@@ -51,4 +57,4 @@ async def start_bot():
 
 # Run the bot
 if name == 'main':
-    client.loop.run_until_complete(start_bot())
+    asyncio.run(start_bot())
