@@ -7,6 +7,9 @@ gtts
 unidecode
 beautifulsoup4
 requests
+youtube_dl
+yt_dlp
+pytube
 python-telegram-bot==13.13
 SQLAlchemy==1.4.40
 psycopg2-binary
