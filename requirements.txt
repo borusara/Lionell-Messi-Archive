@@ -76,6 +76,9 @@ python-arq
 envparse
 #profanity (Credits to Julia)
 better_profanity
+bing_image_downloader
+youtube_search_python
+lyrics_extractor
 textblob 
 motor
 gpytranslate
