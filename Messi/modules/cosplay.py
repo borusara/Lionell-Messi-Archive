@@ -3,7 +3,7 @@
 import requests
 from pyrogram import filters
 from pyrogram.types import Message
-from Shikimori import pbot
+from Messi import pbot
 
 @pbot.on_message(filters.command('cosplay'))
 async def cosplay(_, message:Message):
