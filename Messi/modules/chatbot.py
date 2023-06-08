@@ -3,8 +3,8 @@
 import json
 import html
 import requests
-from Shikimori.modules.sql import log_channel_sql as logsql
-import Shikimori.modules.mongo.chatbot_mongo as sql
+from Messi.modules.sql import log_channel_sql as logsql
+import Messi.modules.mongo.chatbot_mongo as sql
 from Messi import AI_API_KEY as api
 
 from time import sleep
