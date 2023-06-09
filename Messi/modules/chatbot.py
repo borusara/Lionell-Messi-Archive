@@ -14,7 +14,7 @@ async def chatbot(_:Client,message:Message):
             return
     if message.text and message.text[0] in ["/", "!", "?", "."]:
         return
-    response = requests.get("https://sugoi-api.vercel.app/chat?msg="+ message.text)
+    response = requests.get("https://sugoi-api.vercel.app/chat?msg=kasie%20ho%20tum"+ message.text)
     if response.status_code == 200:
         data = response.json()['response']
         return await message.reply_text(data)
