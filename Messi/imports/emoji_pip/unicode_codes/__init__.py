@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from Shikimori.imports.emoji_pip.unicode_codes.data_dict import *
+from Messi.imports.emoji_pip.unicode_codes.data_dict import *
 
 
 __all__ = [
