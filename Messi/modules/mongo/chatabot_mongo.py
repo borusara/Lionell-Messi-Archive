@@ -1,4 +1,4 @@
-from Messi import db
+from Messi import mongo
 
 chatbotdb = db.chatbot
 
