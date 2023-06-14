@@ -21,7 +21,7 @@ from Messi import dispatcher
 from Messi.modules.disable import DisableAbleCommandHandler
 
 # converting a gif into a sticker method
-from EnmuBot.services.convert import convert_gif 
+from Messi.services.convert import convert_gif 
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
  
