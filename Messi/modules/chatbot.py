@@ -14,7 +14,7 @@ from telegram.ext import (
 from telegram.utils.helpers import mention_html
 
 import Messi.modules.mongo.chatabot_mongo as sql
-from Messi import AI_API_KEY as api
+from Messi.wtf import AI_API_KEY as api
 from Messi import dispatcher
 from Messi.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 from Messi.modules.log_channel import gloggable, loggable
