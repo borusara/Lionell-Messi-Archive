@@ -1,38 +1,15 @@
-"""
-STATUS: Code is working. ✅
-"""
-
-"""
-GNU General Public License v3.0
-
-Copyright (C) 2022, SOME-1HING [https://github.com/SOME-1HING]
-
-Credits:-
-    I don't know who originally wrote this code. If you originally wrote this code, please reach out to me. 
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
-"""
-
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import types, functions
 from fontTools.ttLib import TTFont 
-import Messi.imports.emoji_pip as emo
+from fontTools.unicode import Unicode 
+import emoji
 import textwrap
 import urllib
+import logging
 import random
 import json
 import os
+import re
 from telethon import events
 from Messi import telethn
 
@@ -222,7 +199,7 @@ async def process(msg, user, client, reply, replied=None):
         space = pfpbg.width + 30
         namefallback = ImageFont.truetype("resources/Quivira.otf", 43, encoding="utf-16")
         for letter in tot:
-            if letter in emo.UNICODE_EMOJI:
+            if letter in emoji.UNICODE_EMOJI:
                 newemoji, mask = await emoji_fetch(letter)
                 canvas.paste(newemoji, (space, 24), mask)
                 space += 40
@@ -262,7 +239,7 @@ async def process(msg, user, client, reply, replied=None):
                     if index in range(offset, length):
                         font2 = ImageFont.truetype("resources/Roboto-Regular.ttf", 30, encoding="utf-16")
                         textcolor = "#898989"
-                if letter in emo.UNICODE_EMOJI:
+                if letter in emoji.UNICODE_EMOJI:
                     newemoji, mask = await emoji_fetch(letter)
                     canvas.paste(newemoji, (x, y - 2), mask)
                     x += 45
@@ -412,8 +389,10 @@ async def q(event):
     os.remove('sticker.webp')
     
     
-__mod_name__ = "Quotly"
+__mod_name__ = "QUOTLY🖼️"
 
 __help__ = """
-> `/q` *:* To quote a message.
+⚙️ 𝗔𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲 𝗰𝗼𝗺𝗺𝗮𝗻𝗱:
+❦ /q [in response to the message]
+❦ make a quote from the message!
 """
